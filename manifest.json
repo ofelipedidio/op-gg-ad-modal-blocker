@@ -1,0 +1,36 @@
+{
+  "name": "op.gg ad modal remover",
+  "description": "Automatically removes the ad modal from op.gg",
+  "version": "1.0",
+  "manifest_version": 3,
+  "host_permissions": [
+    "https://www.op.gg/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.op.gg/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "/images/logo16.png",
+      "32": "/images/logo32.png",
+      "64": "/images/logo64.png",
+      "128": "/images/logo128.png",
+      "256": "/images/logo256.png",
+      "512": "/images/logo512.png"
+    }
+  },
+  "icons": {
+    "16": "/images/logo16.png",
+    "32": "/images/logo32.png",
+    "64": "/images/logo64.png",
+    "128": "/images/logo128.png",
+    "256": "/images/logo256.png",
+    "512": "/images/logo512.png"
+  }
+}
